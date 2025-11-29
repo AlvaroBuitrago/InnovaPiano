@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Prompts de IA - Piano Creativo 4.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Custom Styles for Infographic Aesthetics (Copied from index) */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        .header-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 3.5rem; /* 56px */
+        }
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+        }
+        /* Gradient Text */
+        .text-creative {
+            background: linear-gradient(90deg, #facc15, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .prompt-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .prompt-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(236, 72, 153, 0.2);
+        }
+        @media (min-width: 640px) {
+            .header-title {
+                font-size: 5rem; /* 80px */
+            }
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-10">
+
+    <!-- Header / Title Section -->
+    <header class="text-center py-12 bg-gray-800 rounded-3xl shadow-xl mb-10 border-b-8 border-pink-400/50 relative">
+        <h1 class="header-title text-5xl sm:text-7xl">
+            BANCO DE <span class="text-creative">PROMPTS IA</span>
+        </h1>
+        <p class="text-xl sm:text-2xl mt-4 font-light text-gray-300">
+            Tu punto de partida para la co-creación musical.
+        </p>
+
+        <!-- Link Back to Main Page -->
+        <a href="index.html" class="absolute top-5 left-5 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded-xl transition duration-300 flex items-center shadow-lg">
+            <i class="fa-solid fa-arrow-left mr-2"></i> Volver a Inicio
+        </a>
+    </header>
+
+    <!-- Content: Prompts by Area -->
+    <main class="space-y-16">
+
+        <!-- Area 1: DISEÑA TU SONIDO (Composición y Arreglos) -->
+        <section class="mb-12">
+            <h2 class="section-title text-4xl mb-8 text-left text-yellow-300 border-b-4 border-yellow-500/30 pb-3 flex items-center">
+                <i class="fa-solid fa-wand-magic-sparkles mr-4"></i> 1. Diseña Tu Sonido
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Prompt Card 1.1 - Tonal -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-yellow-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Melodía Tonal Asistida</h3>
+                    <p class="text-gray-300 italic mb-3">"Crea una melodía de 8 compases, en 4/4 y en la tonalidad de Mi menor. La primera frase debe tener un ritmo de corcheas constantes y la segunda debe ser más lírica, usando semicorcheas. Incluye la partitura en formato LilyPond."</p>
+                    <span class="text-sm font-semibold text-yellow-400 block mt-4">#Composición #Tonal #Melenor</span>
+                </div>
+                <!-- Prompt Card 1.2 - Modal -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-yellow-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Pieza Modal y Textura</h3>
+                    <p class="text-gray-300 italic mb-3">"Genera una idea de 16 compases para piano solo, utilizando el Modo Dórico sobre un pedal de Re en el bajo (ostinato). Describe la textura que debería tener la mano derecha (ej. arpegios fluidos o acordes en bloque)."</p>
+                    <span class="text-sm font-semibold text-yellow-400 block mt-4">#Improvisación #Modal #Textura</span>
+                </div>
+                <!-- Prompt Card 1.3 - Arreglo -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-yellow-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Variaciones Estilísticas</h3>
+                    <p class="text-gray-300 italic mb-3">"Toma los primeros 4 compases de 'Pequeña Serenata Nocturna' (Mozart). Muestra cómo se puede transformar la armonía y el ritmo para crear 3 variaciones: una en estilo Jazz Swing, otra en estilo Pop Balada, y una en estilo Minimalista (tipo Reich)."</p>
+                    <span class="text-sm font-semibold text-yellow-400 block mt-4">#Arreglos #Estilos #Contraste</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Area 2: DOMINA EL ACOMPAÑAMIENTO (Patrones y Reducción) -->
+        <section class="mb-12">
+            <h2 class="section-title text-4xl mb-8 text-left text-pink-300 border-b-4 border-pink-500/30 pb-3 flex items-center">
+                <i class="fa-solid fa-hands-clapping mr-4"></i> 2. Domina el Acompañamiento
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Prompt Card 2.1 - Patrones -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-pink-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Patrón Rítmico Armónico</h3>
+                    <p class="text-gray-300 italic mb-3">"Diseña un patrón de acompañamiento para la mano izquierda en un compás de 3/4 para el acorde C menor. Debe estar en estilo 'Valse Musette' (Acorde en 1, Bajo en 2 y 3). Muestra la notación y el cifrado armónico de cada tiempo."</p>
+                    <span class="text-sm font-semibold text-pink-400 block mt-4">#Acompañamiento #Patrones #Ritmo</span>
+                </div>
+                <!-- Prompt Card 2.2 - Reducción -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-pink-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Reducción Pianística Compleja</h3>
+                    <p class="text-gray-300 italic mb-3">"Explica los pasos para reducir una textura orquestal de 5 voces (2 violines, viola, cello, contrabajo) a una reducción pianística de dos pentagramas, manteniendo la esencia armónica y melódica de las cuerdas."</p>
+                    <span class="text-sm font-semibold text-pink-400 block mt-4">#Lectura #Reducción #Orquestal</span>
+                </div>
+                <!-- Prompt Card 2.3 - Improvisación -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-pink-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Improvisación sobre Cadencia</h3>
+                    <p class="text-gray-300 italic mb-3">"Propón 5 formas diferentes de improvisar melódicamente sobre una cadencia andaluza (Am - G - F - E7). Pide que se utilicen recursos como notas de paso cromáticas, arpegios y figuraciones rítmicas sincopadas."</p>
+                    <span class="text-sm font-semibold text-pink-400 block mt-4">#Improvisación #Armonía #Jazz</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Area 3: CAJA DE HERRAMIENTAS DIGITAL (Análisis y Producción) -->
+        <section class="mb-12">
+            <h2 class="section-title text-4xl mb-8 text-left text-purple-300 border-b-4 border-purple-500/30 pb-3 flex items-center">
+                <i class="fa-solid fa-robot mr-4"></i> 3. Caja de Herramientas Digital
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Prompt Card 3.1 - Análisis -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-purple-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Análisis Formal y Armónico</h3>
+                    <p class="text-gray-300 italic mb-3">"Analiza el primer movimiento de la Sonata Op. 2 No. 1 de Beethoven. Identifica la forma (ej. Forma Sonata) y etiqueta todas las secciones principales (Exposición, Desarrollo, Reexposición). Menciona la tonalidad de la segunda área temática."</p>
+                    <span class="text-sm font-semibold text-purple-400 block mt-4">#Análisis #Beethoven #FormaMusical</span>
+                </div>
+                <!-- Prompt Card 3.2 - Prompting Avanzado (Suno/Udio) -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-purple-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Prompting para Generación de Audio</h3>
+                    <p class="text-gray-300 italic mb-3">"Quiero generar una 'Balada de Piano Jazz Neoclásica'. Escribe un prompt detallado para Suno o Udio que incluya la instrumentación, el tempo (andante), la atmósfera (nostálgica, con lluvia), y la estructura (AABA)."</p>
+                    <span class="text-sm font-semibold text-purple-400 block mt-4">#Suno #Udio #GeneraciónAudio</span>
+                </div>
+                <!-- Prompt Card 3.3 - Post-Producción -->
+                <div class="bg-gray-700 p-6 rounded-xl prompt-card border-l-4 border-purple-400">
+                    <h3 class="font-bold text-xl text-yellow-200 mb-3">Guía de Masterización DIY</h3>
+                    <p class="text-gray-300 italic mb-3">"Dame una lista de 5 pasos esenciales para masterizar mi propia pieza de piano grabada en un DAW (Digital Audio Workstation), incluyendo el uso de limitadores, ecualización y comprensión. Describe el objetivo de cada paso."</p>
+                    <span class="text-sm font-semibold text-purple-400 block mt-4">#Producción #Mastering #DAW</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center pt-12 pb-6 mt-12 border-t border-gray-700">
+        <p class="text-lg text-gray-400 mb-4">"La IA es el pentagrama del futuro, tú eres el compositor."</p>
+        <a href="index.html" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">
+            <i class="fa-solid fa-house-chimney mr-2"></i> Volver a la Infografía Principal
+        </a>
+    </footer>
+
+</body>
+</html>
